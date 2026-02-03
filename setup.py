@@ -8,6 +8,7 @@ with open('requirements.txt') as f:
 setup(
     name='csm',
     version='0.1.0',
-    packages=find_packages(),
+    packages=find_packages(where="src"),
     install_requires=requirements,
+    package_dir={"": "src"},
 )
